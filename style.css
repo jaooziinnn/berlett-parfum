@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #000, #333);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #00ff88;
+}
+
+button {
+    background: #00ff88;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00cc6a;
+}
+.tag {
+    position: absolute;
+    background: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.card {
+    position: relative;
+}
+
+.estrelas {
+    color: gold;
+    margin: 5px 0;
+}
+
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    transform: scale(1.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #000, #222, #000);
+    border-bottom: 1px solid #00ff88;
+}
+header {
+    text-align: center;
+    padding: 25px 5px 30px; /* aumentei o espaço em cima */
+    background: linear-gradient(90deg, #000, #222, #000);
+    border-bottom: 1px solid #00ff88;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column; /* deixa um embaixo do outro */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1px; /* desce mais a logo */
+}
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    background: #111;
+    color: white;
+}
+h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+}   
+.banner {
+    height: 300px;
+    background: url('imagens/banner.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-texto {
+    background: rgba(0,0,0,0.6);
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.banner-texto h2 {
+    font-size: 32px;
+}
+
+.banner-texto p {
+    margin: 10px 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card img {
+    width: 100%;
+    height: 220px; /* altura fixa */
+    object-fit: cover; /* ajusta sem deformar */
+    border-radius: 12px;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+}

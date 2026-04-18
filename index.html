@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlett Parfum</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTE CORRETA -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.jpg" alt="Logo">
+            <h1>Berlett Parfum</h1>
+        </div>  
+        <p>Elegância em cada fragrância</p>
+    </header>
+
+    <!-- 🔥 BANNER -->
+    <section class="banner">
+        <div class="banner-texto">
+            <h2>🔥 Promoção da Semana</h2>
+            <p>Perfumes importados com até 20% OFF no pix!</p>
+            <button onclick="window.scrollTo(0, 600)">Ver Produtos</button>
+        </div>
+    </section>
+
+    <section class="produtos">
+
+        <div class="card">
+            <img src="imagens/yara.jpg" alt="Yara">
+            <h2>Yara</h2>
+            <p>Feminino • Doce e elegante</p>
+            <span>R$ 86,00</span>
+            <button onclick="comprar('Yara')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/images.jpg" alt="Fakhar Gold">
+            <h2>Fakhar Gold</h2>
+            <p>Masculino • Elegante e Marcante</p>
+            <span>R$ 80,00</span>
+            <button onclick="comprar('Fakhar Gold')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/one.jpg" alt="One Million">
+            <h2>One Million</h2>
+            <p>Masculino • Luxuoso</p>
+            <span>R$ 229,00</span>
+            <button onclick="comprar('One Million')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/narguile.jpg" alt="Dream of Haze">
+            <h2>Dream of Haze</h2>
+            <p>Masculino • Luxuoso</p>
+            <span>R$ 191,00</span>
+            <button onclick="comprar('Dream of Haze')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/fakharb.jpg" alt="Fakhar Black">
+            <h2>Fakhar Black</h2>
+            <p>Masculino • Luxuoso</p>
+            <span>R$ 105,00</span>
+            <button onclick="comprar('Fakhar Black')">Comprar</button>
+        </div>
+
+    </section>
+
+    <script>
+        function comprar(produto) {
+            let numero = "5545998544243";
+            let mensagem = "Olá, quero solicitar o perfume " + produto;
+            let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+
+            window.open(url, "_blank");
+        }
+    </script>
+
+    <!-- WhatsApp fixo -->
+    <a href="https://wa.me/5545998544243" class="whatsapp-fixo" target="_blank">
+        📞
+    </a>
+
+</body>
+</html>
